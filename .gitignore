@@ -1,1 +1,2 @@
 /data/users/*
+/api/v1/authorization/jwt
