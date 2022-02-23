@@ -1,0 +1,17 @@
+CREATE TABLE `users`(
+    `id` integer auto_increment not null,
+    `username` varchar(255) not null unique,
+    `password` varchar(255) not null,
+    `email` varchar(255) not null unique,
+    `name` varchar(255),
+    `surname` varchar(255),
+    `role` enum('admin','user') not null default 'user',
+    `baseDir` varchar(255),
+    `token` text,
+    `tokenExp` integer,
+    `created_at` date default now(),
+    `lastIP` varchar(255),
+    `lastDevice` varchar(255),
+    `lastLogin` date default now(),
+    primary key(`id`)
+);

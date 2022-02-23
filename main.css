@@ -1,0 +1,61 @@
+[v-cloak] {
+  display: none;
+}
+
+body {
+  background: #e5e5e5 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .myform {
+    margin-top: 15px;
+    position: relative !important;
+  }
+
+  #logout {
+    margin-left: 0px !important;
+    margin-top: 15px !important;
+  }
+}
+
+#example::-webkit-scrollbar {
+  display: none;
+}
+
+#example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.blury {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.blur {
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.actions{
+  white-space: nowrap;
+}
+
+.actions{
+  white-space: nowrap;
+}
+
+.actions > .title{
+  display: inline-block;
+}
+
+.actions > .mybtn{
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+}

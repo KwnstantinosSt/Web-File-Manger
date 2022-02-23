@@ -1,0 +1,13 @@
+<Limit GET HEAD POST PUT DELETE OPTIONS>
+# Deprecated apache 2.2 syntax:
+# Order Allow,Deny
+# Allow from all
+# Apache > 2.4 requires:
+Require all granted
+</Limit>
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+</IfModule>
